@@ -1,11 +1,17 @@
 <h3><span class="badge badge-pill badge-success">Ángel<small> escribiendo...</small></span></h3>
 <hr>
 
-<div class="app-messages">
+<div id="app-messages"
+     class="app-messages">
 
   <div *ngFor="let chat of _cs.chats | async"
-        class="text-right">
-    <span class="badge badge-primary">{{ chat.name }}</span>
+       [ngClass]="{ 'text-right': _cs.user.name == chat.name,
+                    'text-left': _cs.user.name != chat.name}">
+    <span class="badge badge-pill" [ngClass]="{ 'badge-primary': _cs.user.name == chat.name,
+                                     'badge-success': _cs.user.name != chat.name}">
+
+      {{ chat.name }}
+    </span>
     <p>
       {{ chat.message }}
     </p>

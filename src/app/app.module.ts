@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { ChatComponent } from './components/chat/chat.component';
 
 // Services
-import { ChatService } from './services/chat.service';
+import { ChatService } from './services/chat/chat.service';
 
 @NgModule({
   declarations: [

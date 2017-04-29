@@ -1,5 +1,7 @@
 # Chat
 
+![alt screenshot](https://raw.githubusercontent.com/mvillafuertem/angular2-firebase-chat/develop/screenshots/screenshot.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server

@@ -6,7 +6,10 @@ import { Message } from '../../interfaces/message.interface';
 export class ChatService {
 
   chats: FirebaseListObservable<any[]>;
-
+  user:any = {
+    name: "Miguel"
+  }
+  
   constructor(private af: AngularFire) { }
 
   // Carga los mensajes de la base de datos

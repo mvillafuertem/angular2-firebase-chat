@@ -10,10 +10,11 @@ import { firebaseConfig } from '../environments/firebase.config';
 // Components
 import { AppComponent } from './app.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { LoginComponent } from './components/login/login.component';
 
 // Services
 import { ChatService } from './services/chat/chat.service';
-import { LoginComponent } from './components/login/login.component';
+import { LoginService } from './services/login/login.service'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LoginComponent } from './components/login/login.component';
     AngularFireModule.initializeApp( firebaseConfig )
   ],
   providers: [
-    ChatService
+    ChatService,
+    LoginService
   ],
   bootstrap: [AppComponent]
 })

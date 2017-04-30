@@ -2,14 +2,16 @@
 
   <h1>Chat</h1>
   <hr>
+  <div class="animation fadeIn fast" *ngIf="!_cs.user">
 
-  <app-login></app-login>
+    <app-login></app-login>
+  </div>
 
-  <!-- <div class="chat-window">
+  <div class="chat-window animation fadeIn fast" *ngIf="_cs.user">
 
     <app-chat></app-chat>
 
-  </div> -->
+  </div>
   <hr>
   <span><small class="developed">© developed by Miguel Villafuerte</small></span>
 

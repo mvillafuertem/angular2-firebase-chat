@@ -30,8 +30,9 @@ export class ChatService {
   // Añade los mensajes a la base de datos
   addMessage( text:string ) {
     let message:Message = {
-      name: "Miguel",
-      message: text
+      name: this.user.auth.displayName,
+      message: text,
+      uid: this.user.uid
     }
     return this.chats.push( message );
   }

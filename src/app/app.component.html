@@ -1,8 +1,21 @@
 <div class="container main-container">
 
-  <h1>Chat</h1>
+
+  <div class="row animation fadeIn fast">
+    <div class="">
+      <h1>Chat</h1>
+    </div>
+    <div class="text-right"  *ngIf="_cs.user">
+      <button (click)="_ls.logout()" type="button" name="button" class="btn btn-outline-danger">Cerrar sesión</button>
+    </div>
+  </div>
   <hr>
-  <div class="chat-window">
+  <div class="animation fadeIn fast" *ngIf="!_cs.user">
+
+    <app-login></app-login>
+  </div>
+
+  <div class="chat-window animation fadeIn fast" *ngIf="_cs.user">
 
     <app-chat></app-chat>
 

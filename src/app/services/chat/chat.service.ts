@@ -32,7 +32,7 @@ export class ChatService {
     let message:Message = {
       name: this.user.auth.displayName,
       message: text,
-      uid: this.user.uid
+      uid: this.user.auth.uid
     }
     return this.chats.push( message );
   }

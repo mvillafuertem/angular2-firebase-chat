@@ -1,10 +1,7 @@
+# Chat
 [![Build Status](https://travis-ci.org/mvillafuertem/angular2-firebase-chat.svg?branch=master)](https://travis-ci.org/mvillafuertem/angular2-firebase-chat)
 [![CircleCI](https://circleci.com/gh/mvillafuertem/angular2-firebase-chat/tree/master.svg?style=shield)](https://circleci.com/gh/mvillafuertem/angular2-firebase-chat/tree/master)
-
 [![Coverage Status](https://coveralls.io/repos/github/mvillafuertem/angular2-firebase-chat/badge.svg?branch=master)](https://coveralls.io/github/mvillafuertem/angular2-firebase-chat?branch=master)
-
-
-# Chat
 
 ![alt screenshot1](https://raw.githubusercontent.com/mvillafuertem/angular2-firebase-chat/develop/screenshots/screenshot1.png)
 ![alt screenshot2](https://raw.githubusercontent.com/mvillafuertem/angular2-firebase-chat/develop/screenshots/screenshot2.png)

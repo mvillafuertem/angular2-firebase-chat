@@ -5,10 +5,10 @@
      class="app-messages">
 
   <div *ngFor="let chat of _cs.chats | async"
-       [ngClass]="{ 'text-right': _cs.user.name == chat.name,
-                    'text-left': _cs.user.name != chat.name}">
-    <span class="badge badge-pill" [ngClass]="{ 'badge-primary': _cs.user.name == chat.name,
-                                     'badge-success': _cs.user.name != chat.name}">
+       [ngClass]="{ 'text-right': _cs.user.uid == chat.uid,
+                    'text-left': _cs.user.uid != chat.uid}">
+    <span class="badge badge-pill" [ngClass]="{ 'badge-primary': _cs.user.uid == chat.uid,
+                                     'badge-success': _cs.user.uid != chat.uid}">
 
       {{ chat.name }}
     </span>

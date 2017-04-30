@@ -6,11 +6,15 @@ import { Message } from '../../interfaces/message.interface';
 export class ChatService {
 
   chats: FirebaseListObservable<any[]>;
-  user:any = {
-    name: "Miguel"
+  user:any = { }
+
+  constructor(private af: AngularFire) {
+    if( localStorage.getItem('user')) {
+      this.user = JSON.parse(localStorage.getItem('user'));
+    }else{
+      this.user = null;
+    }
   }
-  
-  constructor(private af: AngularFire) { }
 
   // Carga los mensajes de la base de datos
   loadMessage(){

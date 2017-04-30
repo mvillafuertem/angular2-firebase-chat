@@ -5,8 +5,8 @@
      class="app-messages">
 
   <div *ngFor="let chat of _cs.chats | async"
-       [ngClass]="{ 'text-right': _cs.user.uid == chat.uid,
-                    'text-left': _cs.user.uid != chat.uid}">
+       [ngClass]="{ 'text-right': _cs.user.uid == chat.uid }">
+       
     <span class="badge badge-pill" [ngClass]="{ 'badge-primary': _cs.user.uid == chat.uid,
                                      'badge-success': _cs.user.uid != chat.uid}">
 
